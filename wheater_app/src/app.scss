@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300i,400,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #00425d;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  box-sizing: border-box;
+  position: grid;
+  min-height: 100vh;
+  color: white;
+  font-family: "Ubuntu";
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 414px;
+  height: 670px;
+  background: #182b48;
+  margin: auto;
+
+  .box {
+    height: 54px;
+
+    &.row {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin: 0 auto;
+      justify-content: space-evenly;
+
+      .d {
+        width: 25%;
+        font-weight: 100;
+        text-align: left;
+        transform: translateX(50px);
+
+        &.de {
+          display: flex;
+
+          #big_num {
+            font-size: 24px;
+            color: #08f1b7;
+          }
+          #small_num {
+            font-size: 17px;
+            transform: translateY(10px);
+            margin-left: 5px;
+            color: rgba(73, 94, 124, 0.9);
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      background: rgba(24, 43, 72, 0.95);
+    }
+    &:nth-child(2) {
+      background: #1d1d3a;
+    }
+    &:nth-child(3) {
+      background: rgba(24, 43, 72, 0.75);
+    }
+    &:nth-child(4) {
+      background: #1d1d3a;
+    }
+    &:nth-child(5) {
+      background: rgba(24, 43, 72, 0.55);
+    }
+    &:nth-child(6) {
+      background: #1d1d3a;
+    }
+    &:nth-child(7) {
+      background: rgba(24, 43, 72, 0.45);
+    }
+    &:nth-child(8) {
+      background: #1d1d3a;
+    }
+    &:nth-child(9) {
+      background: rgba(24, 43, 72, 0.35);
+    }
+    &:nth-child(10) {
+      background: #1d1d3a;
+    }
+  }
+
+  .box.fr {
+    height: 7em !important;
+    display: flex;
+    padding: 30px;
+
+    .left {
+      .b {
+        height: 3.4em;
+      }
+
+      h2 {
+        font-size: 28px;
+        font-weight: bolder;
+      }
+
+      .two {
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 20px;
+
+        .wrap {
+          padding-left: 30px;
+
+          p {
+            margin-top: -15px;
+            color: #efad16;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .right {
+      width: 100%;
+      float: right;
+
+      h1 {
+        font-weight: 100;
+        position: relative;
+        top: 0;
+        left: 20%;
+        transform: translate(0, -20%);
+        font-size: 5.3em;
+
+        span {
+          position: absolute;
+          top: -10%;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+
+  .last {
+    display: flex;
+    height: 70px;
+    width: 414px;
+
+    .icons {
+      width: 25%;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover h3 span::after {
+        opacity: 1;
+        transition: 0.4s ease-in-out all;
+      }
+
+      h3 span {
+        position: relative;
+        top: 0;
+      }
+
+      h3 span::after {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        bottom: -72%;
+        height: 3px;
+        width: 3.5rem;
+        background: #08f1b7;
+        left: 0;
+        border-radius: 5px;
+        filter: drop-shadow(0 0 0.5rem green);
+        transition: 0.4s ease-in-out all;
+      }
+    }
+    .menu {
+      width: 50%;
+      margin: auto;
+
+      .burger {
+        width: 25px;
+        float: right;
+        margin-right: 35px;
+
+        &:hover {
+          cursor: pointer;
+
+          li {
+            background: #08f1b7;
+            transition: 0.3s ease-in-out all;
+          }
+        }
+
+        li {
+          height: 2px;
+          margin-top: 4px;
+          width: 100%;
+          background: #5d5c5c;
+        }
+      }
+    }
+  }
+}

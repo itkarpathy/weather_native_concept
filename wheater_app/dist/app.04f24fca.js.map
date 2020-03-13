@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["console","log"],"mappings":";;;AAAA,aAEA,QAAA,cAFAA,QAAQC,IAAI","file":"app.04f24fca.js","sourceRoot":"../src","sourcesContent":["console.log(\"hello, app is running!\");\n\nimport \"./app.scss\";\n"]}
